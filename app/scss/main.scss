@@ -1,4 +1,334 @@
-body {
-	background-color: #fff;
+
+@font-face {
+	font-family: 'cuprum';
+	src: url('../fonts/cuprum.woff') format("woff"),
+				url('../fonts/cuprum.woff2') format("woff2"); 
 }
 
+@font-face {
+	font-family: 'cuprumbold';
+	src: url('../fonts/cuprumbold.woff') format("woff"),
+				url('../fonts/cuprumbold.woff2') format("woff2"); 
+}
+
+@font-face {
+	font-family: 'cuprumbolditalic';
+	src: url('../fonts/cuprumbolditalic.woff') format("woff"),
+				url('../fonts/cuprumbolditalic.woff2') format("woff2"); 
+}
+
+@font-face {
+	font-family: 'cuprumitalic';
+	src: url('../fonts/cuprumitalic.woff') format("woff"),
+				url('../fonts/cuprumitalic.woff2') format("woff2"); 
+}
+
+@font-face {
+	font-family: 'ptsans';
+	src: url('../fonts/ptsans.woff') format("woff"),
+				url('../fonts/ptsans.woff2') format("woff2"); 
+}
+
+@font-face {
+	font-family: 'ptsansbold';
+	src: url('../fonts/ptsansbold.woff') format("woff"),
+				url('../fonts/ptsansbold.woff2') format("woff2"); 
+}
+
+
+$darkturquoise: #293449;
+$turquoise: #32425c;
+$red: #ee3643;
+// $redFont: #e9292a;
+$white: #ffffff;
+$lightGrey: #f1f5f7;
+
+body {
+	font-family: 'cuprum', sans-serif;
+}
+
+
+// ---------- header section ----------
+.headerSection {
+
+             //                  actionOrder
+	.actionOrder {
+		background-color: $darkturquoise;
+
+		.container {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			min-height: 42px;
+			padding: 0px 10px;
+			max-width: 960px;
+			color: $white;
+
+             //                  logo
+			.actionOrder-logo {
+				position: relative;
+				h2 {
+					box-sizing: content-box;
+					position: absolute;
+					top: -21px;
+					left: 0px;
+					margin: 0px;			
+					width: 220px;
+					color: $white;
+					background-color: $red;
+					text-transform: uppercase;
+					height: 42px;
+					border-bottom: 5px solid #b52933;
+					text-align: center;
+				}
+			}
+			.actionOrder-logo:hover {
+				h2 {
+					background-color: #ca2c37;
+					border-bottom: 5px solid #9a212a;
+				}	
+			}
+			.actionOrder-logo:active {
+				h2 {
+					background-color: #ba2732;
+					border-bottom: 5px solid #8e1e26;
+				}	
+			}
+
+             //                  search
+			.actionOrder-search {
+				position: relative;
+				margin-left: 220px;
+			}
+			.icon-search-img {
+				background-image: url("../img/headerSection/icon-search.png");
+				width: 17px;
+				height: 17px;
+				opacity: 0.3;
+				position: absolute;
+				left: 17px;
+				top: 13px;
+				z-index: 1;
+			}
+			.actionOrder-search-input {
+				position: relative;
+				width: 270px;
+		    padding: 0;
+		    padding-left: 50px;
+		    margin: 0;
+		    border: none;
+		    height: 42px;
+		    background-color: $darkturquoise;
+		    outline: none;
+			}
+			.actionOrder-search:hover {
+				.icon-search-img {
+					opacity: 1;
+				}
+			}
+			.actionOrder-search-input:focus {
+				background-color: $white;
+				.icon-search-img {
+					background-image: url("../img/headerSection/icon-search-red.png");
+					opacity: 1;
+				}
+			}
+
+             //                  bookmarks, carts
+			.actionOrder-bookmarks,
+			.actionOrder-cart {
+				margin: 0px; 
+			}
+             //                  bookmarks
+			.actionOrder-bookmarks {
+				position: relative;
+				text-align: center;
+				min-height: 42px;
+				line-height: 42px;
+				flex: 1;
+			}
+			.actionOrder-bookmarks::before {
+				content: url("../img/headerSection/icon-basket.png");
+				opacity: 0.3;
+				position: absolute;
+				left: 8px;
+				top: 2px;
+				color: red;
+				z-index: 1;
+			}
+			.actionOrder-bookmarks:hover::before {
+				opacity: 1;
+			}
+			.actionOrder-bookmarks:active {
+				background-color: #161d29;
+				color: rgba(255, 255, 255, 0.7);
+				opacity: 0.5;
+			}
+
+             //                  cart
+			.actionOrder-cart {
+				position: relative;
+				text-align: center;
+				min-height: 42px;
+				line-height: 42px;
+				flex: 1;
+			}
+			.actionOrder-cart::before {
+				content: url("../img/headerSection/icon-basket.png");
+				opacity: 0.3;
+				position: absolute;
+				left: 8px;
+				top: 2px;
+				color: red;
+				z-index: 1;
+			}
+			.actionOrder-cart:hover::before {
+				opacity: 1;
+			}
+			.actionOrder-cart:active {
+				background-color: #161d29;
+				color: rgba(255, 255, 255, 0.7);
+				opacity: 0.5;
+			}
+
+			.actionOrder-checkout {
+			  color: inherit; /* blue colors for links too */
+			  text-decoration: inherit; /* no underline */
+			  min-height: 42px;
+			  line-height: 42px;
+			  background-color: #63a63e;
+			  width: 150px;
+			  text-align: center;
+			}
+			.actionOrder-checkout:hover{
+				background-color: #5fbb2d;
+			}
+			.actionOrder-checkout:active{
+				background-color: #518534;
+				color: rgba(255, 255, 255, 0.5);
+			}
+			
+		}     // container end		
+	}       // actionOrder end
+
+	             //                  marketDesc
+	.headerSection-descAccNav {
+		background-color: $lightGrey;
+		padding-bottom: 30px;
+		.container {
+			display: flex;
+			justify-content: space-between;
+			max-width: 960px;
+			padding: 0px 10px;
+			padding-top: 50px;
+			margin-bottom: 40px;
+			p {
+				margin: 0px;
+			}
+
+			.headerSection-marketDesc {
+				margin-bottom: 0px;
+				padding-left: 52px;
+				max-width: 248px;
+				font-family : 'cuprumitalic', sans-serif;
+				font-size: 16px;
+				line-height: 23px;
+				color: $red;
+			}
+
+			.headerSection-contacts-telephone {
+				position: relative;
+				min-height: 45px;
+				max-width: 270px;
+				border: 3px solid $white;
+				text-align: center;
+				line-height: 45px;
+				font-family : 'cuprum', sans-serif;
+				font-size: 21px;
+				color: $red;
+			}
+			.headerSection-contacts-telephone::before {
+				content: url("../img/headerSection/icon-phone.png");
+				position: absolute;
+				left: 13px;
+				top: 2px;
+				color: red;
+				z-index: 1;
+			}
+			.headerSection-contacts-address {
+				font-size: 14px;
+				color: #32425c;
+			}
+
+			.headerSection-account {
+				font-size: 21px;
+
+				.headerSection-account-login,
+				.headerSection-account-signup {
+					display: inline-block;
+					position: relative;
+					padding: 0px 25px;
+					min-height: 45px;
+			  	line-height: 45px;
+			  	background-color: $white;
+					color: black; 
+			  	text-decoration: none;		  	
+			  	text-align: center;
+				}
+				.headerSection-account-login {
+					padding-left: 48px;
+				}
+				.headerSection-account-login::before {
+					content: url("../img/headerSection/icon-login.png");
+					position: absolute;
+					opacity: 0.3;
+					left: 15px;
+					top: 2px;
+					color: red;
+					z-index: 1;
+				}
+				.headerSection-account-signup:hover,
+				.headerSection-account-login:hover::before,
+				.headerSection-account-login:hover {
+					opacity: 1;
+					color: $red;
+				}
+				.headerSection-account-signup:active,
+				.headerSection-account-login:active {
+					opacity: 0.6;
+					color: black;
+				}
+
+			} //  header-section-account end
+
+		} //    container end
+
+		.headerSection-navigation {
+			max-width: 940px;
+			margin: 0px auto;
+			font-size: 17px;
+		}
+		.headerSection-navigation-list {
+			display: flex;
+			justify-content: center;
+			padding: 0px;
+			min-height: 55px;
+			line-height: 55px;
+			background-color: $turquoise;
+			color: $white;
+			list-style: none;
+			li {
+				padding: 0px 33px;
+			}
+			li:hover {
+				background-color: #293449;
+			}
+			li:active {
+				color: #1d2739;
+				color: rgba(255,255,255, 0.5);
+			}
+			
+		}
+	} //      headerSection-descContactsAcc end
+
+}

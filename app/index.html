@@ -2,61 +2,75 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
 	<title>Technomart</title>
 </head>
 <body>
 
 
-<section class="headerSection container">
+<section class="headerSection">
 		
 		<div class="actionOrder">
-			<div class="actionOrder-logo">
-				<img src="" class="actionOrder-logo-img" alt="">
-			</div>
-			<div class="actionOrder-search">
-				<form action="#">
-					<input type="text" name="product-search" class="actionOrder-search-input">						
-				</form>
-			</div>
-			<div class="actionOrder-bookmarks">
-				<p>Закладки: <span class="actionOrder-bookmarks-amount">0</span></p>
-			</div>
-			<div class="actionOrder-cart">
-				<p>Закладки: <span class="actionOrder-cart-amount">0</span></p>
-			</div>
-			<div class="actionOrder-checkout">
-				<a href="#">Оформить заказ</a>
+			<div class="container">
+				
+				<div class="actionOrder-logo">
+					<h2>Техномарт</h2>
+				</div>
+
+					<form action="get" class="actionOrder-search">
+						<div class="icon-search-img"></div>
+						<input type="text" name="product-search" class="actionOrder-search-input">						
+					</form>
+
+
+					<div class="actionOrder-bookmarks">Закладки: <span class="actionOrder-bookmarks-amount">0</span></div>
+
+					<div class="actionOrder-cart">Корзина: <span class="actionOrder-cart-amount">0</span></div>
+
+
+					<a class="actionOrder-checkout" href="#">Оформить заказ</a>
+
 			</div>
 		</div>
 
-		<p class="headerSection-marketDesc">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+		<div class="headerSection-descAccNav">
+			<div class="container">
+				
+				<p class="headerSection-marketDesc">Интернет-магазин строительных материалов и инструментов для ремонта</p>
 
-		<div class="headerSection-contacts">
-			<p class="headerSection-contacts-telephone">
-				+7 (812) 555-05-55
-			</p>
-			<p class="headerSection-contacts-address">
-				г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-			</p>			
+				<div class="headerSection-contacts">
+					<p class="headerSection-contacts-telephone">
+						+7 (812) 555-05-55
+					</p>
+					<p class="headerSection-contacts-address">
+						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+					</p>			
+				</div>
+
+				<div class="headerSection-account">
+						<a class="headerSection-account-login" href="#">Войти</a>
+						<a class="headerSection-account-signup" href="#">Регистрация</a>
+				</div>
+
+			</div>
+				
+
+			<nav class="headerSection-navigation">
+				<ul class="headerSection-navigation-list">
+					<li>Главная</li>
+					<li>Компания</li>
+					<li>Каталог</li>
+					<li>Новости</li>
+					<li>Спецпредложения</li>
+					<li>Доставка</li>
+					<li>Контакты</li>
+				</ul>
+			</nav>
+
 		</div>
-
-		<div class="headerSection-account">
-				<a href="#">Войти</a>
-				<a href="#">Регистрация</a>
-		</div>
-
-		<nav class="headerSection-navigation">
-			<ul class="headerSection-navigation-list">
-				<li>Главная</li>
-				<li>Компания</li>
-				<li>Каталог</li>
-				<li>Новости</li>
-				<li>Спецпредложения</li>
-				<li>Доставка</li>
-				<li>Контакты</li>
-			</ul>
-		</nav>
-
+			
 </section>
 
 
