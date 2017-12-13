@@ -390,6 +390,9 @@ a:active {
 			bottom: 28px;
 		}
 	}
+	.catalogSection-productBox:last-child {
+		margin-bottom: 0px;
+	}
 	.materials {
 		background-color: #f6b22d;
 		order: 1;
@@ -496,13 +499,16 @@ a:active {
 
 // ---------- product section ----------
 .productSection {
+	margin-bottom: 65px;
+
 	.productSection-popularBox {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		max-width: 940px;
 		min-height: 90px;
-		margin: 0px auto;
+		margin: 20px auto;
+		margin-bottom: 20px;
 		padding: 0px 10px;
 		background-color: #f7f3ec;
 	}
@@ -524,4 +530,129 @@ a:active {
 		text-transform: uppercase;
 		color: $white;
 	}
+	a:hover {
+		background-color: #ca2c37;
+	}
+	a:active {
+		background-color: #ba2732;
+	}
+
+//                  popular products
+	.productSection-productList {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 960px;
+		margin: 0 auto;
+		padding: 0px 10px;
+	}
+	.productSection-productList-box {
+		width: 218px;
+		min-height: 318px;
+		box-sizing: border-box;
+		border: 1px solid #e5e5e5;
+		text-align: center;
+		font-family: "ptsansbold", sans-serif;
+		font-size: 17px;
+		img {
+			display: inline-block;
+		}
+		h3 {
+			font-size: 18px;
+		}
+		.productSection-productList-oldPrice {
+			text-decoration: line-through;
+			color: #999999;
+		}
+		.productSection-productList-stockPrice {
+			position: relative;
+			display: inline-block;
+			background-color: $red;
+			color: $white;
+			width: 102px;
+			min-height: 38px;
+			line-height: 38px;
+			padding-left: 18px;
+			text-align: center;
+			cursor: pointer;
+		}
+		.productSection-productList-stockPrice::after {
+			content: '';
+			position: absolute;
+			right: -18px;
+			top: 0px;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 19px 0 19px 18px;
+			border-color: transparent transparent transparent $red;
+		}
+		.productSection-productList-stockPrice:hover {
+			color: $white;
+		}
+		.withoutOldPrice {
+			margin-top: 39px;
+		}
+	}
+
+	//            popular manufacturers
+	.productSection-manufactList {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		max-width: 960px;
+		margin: 0px auto;
+		padding: 0px 10px;
+	}
+	.productSection-manufactLis-box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-sizing: border-box;
+		width: 220px;
+		min-height: 145px;
+		border: 1px solid #e5e5e5;
+		margin-bottom: 20px;
+	}
+}
+
+
+
+// ---------- services section ----------
+.servicesSection {
+	background-color: #f2f6f8;
+ 	
+ 	.container {
+ 		max-width: 960px;
+ 		margin: 0px auto;
+ 		padding: 0px 10px;
+ 		padding-top: 50px;
+ 	}
+
+ 	.servicesSection-header {
+ 		max-width: 440px;
+ 		font-size: 14px;
+ 		h2 {
+ 			font-size: 36px;
+ 			text-transform: uppercase;
+ 			margin-bottom: 30px;
+ 		}
+ 	}
+
+ 	.servicesSection-serviceList {
+ 		padding: 0px;
+ 		list-style: none;
+ 		li {
+ 			width: 240px;
+ 			padding-left: 23px;
+ 			min-height: 60px;
+ 			line-height: 60px;
+ 			background-color: $turquoise;
+ 			color: $white;
+ 			border-bottom: 1px solid black;
+ 			font-family: "cuprumbold", serif;
+ 			font-size: 21px;
+ 		}
+ 	}
+
 }

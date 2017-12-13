@@ -325,6 +325,9 @@ a:active {
     left: 196px;
     bottom: 28px; }
 
+.catalogSection .catalogSection-productBox:last-child {
+  margin-bottom: 0px; }
+
 .catalogSection .materials {
   background-color: #f6b22d;
   -webkit-box-ordinal-group: 2;
@@ -437,39 +440,163 @@ a:active {
     border: 2px solid white;
     background-color: #ee3643; }
 
-.productSection .productSection-popularBox {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 940px;
-  min-height: 90px;
-  margin: 0px auto;
-  padding: 0px 10px;
-  background-color: #f7f3ec; }
+.productSection {
+  margin-bottom: 65px; }
+  .productSection .productSection-popularBox {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 940px;
+    min-height: 90px;
+    margin: 20px auto;
+    margin-bottom: 20px;
+    padding: 0px 10px;
+    background-color: #f7f3ec; }
+  .productSection h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #32425c;
+    margin: 0px;
+    margin-left: 15px; }
+  .productSection a {
+    margin-right: 15px;
+    width: 253px;
+    min-height: 48px;
+    line-height: 48px;
+    text-align: center;
+    background-color: #ee3643;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff; }
+  .productSection a:hover {
+    background-color: #ca2c37; }
+  .productSection a:active {
+    background-color: #ba2732; }
+  .productSection .productSection-productList {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0px 10px; }
+  .productSection .productSection-productList-box {
+    width: 218px;
+    min-height: 318px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    font-family: "ptsansbold", sans-serif;
+    font-size: 17px; }
+    .productSection .productSection-productList-box img {
+      display: inline-block; }
+    .productSection .productSection-productList-box h3 {
+      font-size: 18px; }
+    .productSection .productSection-productList-box .productSection-productList-oldPrice {
+      text-decoration: line-through;
+      color: #999999; }
+    .productSection .productSection-productList-box .productSection-productList-stockPrice {
+      position: relative;
+      display: inline-block;
+      background-color: #ee3643;
+      color: #ffffff;
+      width: 102px;
+      min-height: 38px;
+      line-height: 38px;
+      padding-left: 18px;
+      text-align: center;
+      cursor: pointer; }
+    .productSection .productSection-productList-box .productSection-productList-stockPrice::after {
+      content: '';
+      position: absolute;
+      right: -18px;
+      top: 0px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 19px 0 19px 18px;
+      border-color: transparent transparent transparent #ee3643; }
+    .productSection .productSection-productList-box .productSection-productList-stockPrice:hover {
+      color: #ffffff; }
+    .productSection .productSection-productList-box .withoutOldPrice {
+      margin-top: 39px; }
+  .productSection .productSection-manufactList {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0px auto;
+    padding: 0px 10px; }
+  .productSection .productSection-manufactLis-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 220px;
+    min-height: 145px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 20px; }
 
-.productSection h2 {
-  font-size: 30px;
-  text-transform: uppercase;
-  color: #32425c;
-  margin: 0px;
-  margin-left: 15px; }
-
-.productSection a {
-  margin-right: 15px;
-  width: 253px;
-  min-height: 48px;
-  line-height: 48px;
-  text-align: center;
-  background-color: #ee3643;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #ffffff; }
+.servicesSection {
+  background-color: #f2f6f8; }
+  .servicesSection .container {
+    max-width: 960px;
+    margin: 0px auto;
+    padding: 0px 10px;
+    padding-top: 50px; }
+  .servicesSection .servicesSection-header {
+    max-width: 440px;
+    font-size: 14px; }
+    .servicesSection .servicesSection-header h2 {
+      font-size: 36px;
+      text-transform: uppercase;
+      margin-bottom: 30px; }
+  .servicesSection .servicesSection-serviceList {
+    padding: 0px;
+    list-style: none; }
+    .servicesSection .servicesSection-serviceList li {
+      width: 240px;
+      padding-left: 23px;
+      min-height: 60px;
+      line-height: 60px;
+      background-color: #32425c;
+      color: #ffffff;
+      border-bottom: 1px solid black;
+      font-family: "cuprumbold", serif;
+      font-size: 21px; }
