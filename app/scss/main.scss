@@ -706,6 +706,7 @@ a:active {
 // ---------- company about section ----------
 .companyAbout {
 	padding-top: 75px;
+	padding-bottom: 85px;
 
 	h2 {
 		font-size: 30px;
@@ -755,6 +756,8 @@ a:active {
 		margin-top: 25px;
 		max-width: 220px;
 		padding: 10px 0;
+		font-size: 14px;
+		text-transform: uppercase;
 		text-align: center;
 		background-color: $red;
 		color: $white;
@@ -772,10 +775,121 @@ a:active {
 		display:block;
 		margin-top: 32px;
 		padding: 10px 0;
+		font-size: 14px;
+		text-transform: uppercase;
 		text-align: center;
 		background-color: $red;
 		color: $white;
 	}
 
+}
 
+
+
+.navSectionBottom {
+	background-color: $turquoise;
+	color: $white;
+	font-size: 18px;
+	line-height: 24px;
+	padding-bottom: 50px;
+
+	.container {
+		max-width: 960px;
+		padding: 0 10px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.navSectionBottom-logoAddressBox {
+		max-width: 380px;
+	}
+
+	.navSectionBottom-nav {
+		flex-grow: 1;
+	}
+	ul {
+		display: flex;
+		justify-content: space-between;
+	  list-style-type: none;
+		margin: 38px 0;
+	}
+	.navSectionBottom-nav-materials {
+		padding-left: 60px;
+		color: #ffd180;
+	}
+
+	.navSectionBottom-logo {
+		position: relative;
+		box-sizing: content-box;
+		width: 220px;
+		height: 68px;
+		margin-bottom: 27px;
+		color: $white;
+		background-color: $red;
+		border-bottom: 5px solid #b52933;
+		font-size: 30px;
+		line-height: 68px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	.navSectionBottom-logo:hover {
+		background-color: #ca2c37;
+		border-bottom: 5px solid #9a212a;
+	}
+	.navSectionBottom-logo:active {
+		background-color: #ba2732;
+		border-bottom: 5px solid #8e1e26;
+	}
+}
+
+
+
+.footer {
+	background-color: $darkturquoise;
+
+	p {
+		margin: 0;
+	}
+
+	.container {
+		min-height: 107px;
+		max-width: 960px;
+		padding: 10px 0;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: $white;		
+	}
+
+	.footer-social {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 40px;
+			height: 40px;
+			margin: 0 3px;
+			border-radius: 20px;
+			background-color: #212a3a;
+			text-align: center;
+		}
+	}
+
+	.footer-designBy {
+		display: flex;
+		justify-content: space-around;
+		width: 300px;
+	}
+
+	a {
+		display: block;
+		color: #ffd180;
+		text-decoration: none;
+	}
+	
 }

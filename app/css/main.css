@@ -640,7 +640,8 @@ a:active {
       font-size: 13px; }
 
 .companyAbout {
-  padding-top: 75px; }
+  padding-top: 75px;
+  padding-bottom: 85px; }
   .companyAbout h2 {
     font-size: 30px;
     margin-bottom: 15px;
@@ -683,6 +684,8 @@ a:active {
     margin-top: 25px;
     max-width: 220px;
     padding: 10px 0;
+    font-size: 14px;
+    text-transform: uppercase;
     text-align: center;
     background-color: #ee3643;
     color: #ffffff; }
@@ -694,6 +697,137 @@ a:active {
     display: block;
     margin-top: 32px;
     padding: 10px 0;
+    font-size: 14px;
+    text-transform: uppercase;
     text-align: center;
     background-color: #ee3643;
     color: #ffffff; }
+
+.navSectionBottom {
+  background-color: #32425c;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 50px; }
+  .navSectionBottom .container {
+    max-width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .navSectionBottom .navSectionBottom-logoAddressBox {
+    max-width: 380px; }
+  .navSectionBottom .navSectionBottom-nav {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  .navSectionBottom ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    list-style-type: none;
+    margin: 38px 0; }
+  .navSectionBottom .navSectionBottom-nav-materials {
+    padding-left: 60px;
+    color: #ffd180; }
+  .navSectionBottom .navSectionBottom-logo {
+    position: relative;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    width: 220px;
+    height: 68px;
+    margin-bottom: 27px;
+    color: #ffffff;
+    background-color: #ee3643;
+    border-bottom: 5px solid #b52933;
+    font-size: 30px;
+    line-height: 68px;
+    text-transform: uppercase;
+    text-align: center; }
+  .navSectionBottom .navSectionBottom-logo:hover {
+    background-color: #ca2c37;
+    border-bottom: 5px solid #9a212a; }
+  .navSectionBottom .navSectionBottom-logo:active {
+    background-color: #ba2732;
+    border-bottom: 5px solid #8e1e26; }
+
+.footer {
+  background-color: #293449; }
+  .footer p {
+    margin: 0; }
+  .footer .container {
+    min-height: 107px;
+    max-width: 960px;
+    padding: 10px 0;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #ffffff; }
+  .footer .footer-social {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .footer .footer-social a {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 40px;
+      height: 40px;
+      margin: 0 3px;
+      -webkit-border-radius: 20px;
+              border-radius: 20px;
+      background-color: #212a3a;
+      text-align: center; }
+  .footer .footer-designBy {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    width: 300px; }
+  .footer a {
+    display: block;
+    color: #ffd180;
+    text-decoration: none; }
