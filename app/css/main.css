@@ -579,9 +579,28 @@ a:active {
     max-width: 960px;
     margin: 0px auto;
     padding: 0px 10px;
-    padding-top: 50px; }
+    padding-top: 50px;
+    background-image: url("../img/servicesSection/bus.png");
+    background-repeat: no-repeat;
+    background-position: right bottom; }
+  .servicesSection .servicesSection_list_description_box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+        -ms-flex-align: start;
+            align-items: start;
+    padding-bottom: 100px;
+    max-width: 620px; }
   .servicesSection .servicesSection-header {
     max-width: 440px;
+    margin-bottom: 80px;
     font-size: 14px; }
     .servicesSection .servicesSection-header h2 {
       font-size: 36px;
@@ -591,6 +610,8 @@ a:active {
     padding: 0px;
     list-style: none; }
     .servicesSection .servicesSection-serviceList li {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       width: 240px;
       padding-left: 23px;
       min-height: 60px;
@@ -600,3 +621,79 @@ a:active {
       border-bottom: 1px solid black;
       font-family: "cuprumbold", serif;
       font-size: 21px; }
+    .servicesSection .servicesSection-serviceList li:first-of-type {
+      background-color: #ffffff;
+      color: #32425c; }
+    .servicesSection .servicesSection-serviceList li:nth-of-type(2) {
+      border-bottom: 1px solid #293449; }
+    .servicesSection .servicesSection-serviceList li:nth-of-type(3) {
+      border-top: 1px solid #405069; }
+  .servicesSection .servicesSection-serviceDescription {
+    max-width: 280px; }
+    .servicesSection .servicesSection-serviceDescription h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      color: #32425c; }
+    .servicesSection .servicesSection-serviceDescription p {
+      font-family: "ptsans", sans-serif;
+      font-size: 13px; }
+
+.companyAbout {
+  padding-top: 75px; }
+  .companyAbout h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-transform: uppercase; }
+  .companyAbout p {
+    margin-top: 25px;
+    font-size: 13px;
+    line-height: 24px; }
+  .companyAbout .container {
+    max-width: 960px;
+    padding: 0 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .companyAbout .companyAbout-technomart {
+    max-width: 540px; }
+  .companyAbout ul {
+    margin-top: 20px;
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 35px; }
+  .companyAbout li {
+    position: relative; }
+  .companyAbout li::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: #ee3643;
+    top: 50%;
+    margin-top: -1px;
+    left: -35px; }
+  .companyAbout .companyAbout-btnMore {
+    display: block;
+    margin-top: 25px;
+    max-width: 220px;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #ee3643;
+    color: #ffffff; }
+  .companyAbout .companyAbout-contacts {
+    max-width: 300px; }
+  .companyAbout img {
+    margin-top: 17px; }
+  .companyAbout .companyAbout-contacts-btnFind {
+    display: block;
+    margin-top: 32px;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #ee3643;
+    color: #ffffff; }
