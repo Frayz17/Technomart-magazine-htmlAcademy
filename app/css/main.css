@@ -689,6 +689,10 @@ a:active {
     text-align: center;
     background-color: #ee3643;
     color: #ffffff; }
+  .companyAbout .companyAbout-btnMore:hover {
+    background-color: #ca2c37; }
+  .companyAbout .companyAbout-btnMore:active {
+    background-color: #ba2732; }
   .companyAbout .companyAbout-contacts {
     max-width: 300px; }
   .companyAbout img {
@@ -702,6 +706,10 @@ a:active {
     text-align: center;
     background-color: #ee3643;
     color: #ffffff; }
+  .companyAbout .companyAbout-contacts-btnFind:hover {
+    background-color: #ca2c37; }
+  .companyAbout .companyAbout-contacts-btnFind:active {
+    background-color: #ba2732; }
 
 .navSectionBottom {
   background-color: #32425c;
